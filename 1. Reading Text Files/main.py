@@ -24,7 +24,7 @@ def count_words():
     # First: We turn all characters to lowercase
     text = text.lower()
 
-    # Second: We substitute all not alphanumeric characters to nothing at all
+    # Second: We substitute all not alphanumeric characters to a whitespace at all
     text = re.sub(r'[^\w]', ' ', text)
 
     # Third: we turn the double whitespaces into single whitespace
